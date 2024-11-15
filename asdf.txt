@@ -1,0 +1,5 @@
+La seguridad se ha vuelto un verdadero desafío. No solo estamos lidiando con los retos que plantea la IA... 
+ahora también enfrentamos ataques de un grupo de hackers ambicioso. Su único objetivo es alcanzar la cima del ranking. 
+Nuestro equipo de seguridad está investigando cómo lograron obtener permisos de administrador, pero algo es seguro: 
+si esto continúa, ¡sólo quedarán bots y hackers! Debemos resolver esta situación y eliminar a estos usuarios malintencionados 
+de nuestro sistema. ¿Podrías ayudarnos?
