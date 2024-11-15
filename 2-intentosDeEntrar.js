@@ -82,9 +82,17 @@ async function leerArchivoLineaPorLinea(rutaArchivo) {
 
 async function main() {
     const listaDeIntentosDeAcceso = await leerArchivoLineaPorLinea('./log.txt'); // Llama a la función para leer el archivo y espera a que termine, luego asigna el resultado a la variable global intentosDeAcceso.
-    console.log(listaDeIntentosDeAcceso); // Imprime el array de líneas leídas en la consola.
-    // Aquí puedes procesar el array de líneas como desees.
-    // aquí quede
+    // console.log(listaDeIntentosDeAcceso); // Imprime el array de líneas leídas en la consola.
+    // Itera sobre cada línea de intentos de acceso y verifica si es válido o no, y esa respuesta la guarda en un array
+    const resultados = listaDeIntentosDeAcceso.map((intento) => detectarAccesoNoDeseadoDeOmega(intento));
+    console.log(resultados); // Imprime el array de resultados en la consola.
+    // Cuenta cuántos intentos son válidos y cuántos no
+    const validos = resultados.filter((resultado) => resultado).length;
+    const invalidos = resultados.filter((resultado) => !resultado).length;
+    console.log(`Intentos válidos: ${validos}, intentos inválidos: ${invalidos}`);
+    console.log(`${validos}true${invalidos}false`);
 }
 
 main(); // Llama a la función main para ejecutar el código.
+
+//Intentos válidos: 299, intentos inválidos: 198
