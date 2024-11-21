@@ -90,7 +90,7 @@ async function main() {
     const validos = resultados.filter((resultado) => resultado).length;
     const invalidos = resultados.filter((resultado) => !resultado).length;
     console.log(`Intentos válidos: ${validos}, intentos inválidos: ${invalidos}`);
-    console.log(`${validos}true${invalidos}false`);
+    console.log(`${validos}true${invalidos}false`); // 299true198false
 }
 
 main(); // Llama a la función main para ejecutar el código.
